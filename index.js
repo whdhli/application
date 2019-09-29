@@ -7,7 +7,7 @@ var app = Express();
 var port = process.env.PORT || 8080;
 
 // Send message for default URL
-app.get('/', (req, res) => res.send('Hello. add in in the link ?busNumber=yourchoice%startingBusStopCode=yourchoice &endingBusStopCOde=yourchoice&direction=1'));
+app.get('/', (req, res) => res.send('Hello. in the address bar, type in http://localhost:8080 and add in ?busNumber=yourchoice%startingBusStopCode=yourchoice &endingBusStopCode=yourchoice&direction=1'));
     
     
      DistanceBetweenStops = (busNumber, startingBusStopCode, endingBusStopCode, direction) => {
